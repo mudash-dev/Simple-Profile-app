@@ -75,7 +75,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_camera"
+        app:srcCompat="@drawable/img_student"
         tools:ignore="ImageContrastCheck" />
 
     <EditText
