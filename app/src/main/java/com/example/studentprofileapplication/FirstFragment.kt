@@ -1,3 +1,4 @@
+/**
 package com.example.studentprofileapplication
 
 import android.os.Bundle
@@ -41,4 +42,4 @@ class FirstFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-}
+}**/
