@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="399dp"
         android:layout_height="105dp"
-        android:background="@color/material_dynamic_neutral10"
+        android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +48,7 @@
             android:paddingBottom="16dp"
             android:text="@string/scholars_association_university"
             android:textAlignment="gravity"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/profile"
             app:layout_constraintEnd_toEndOf="parent"
@@ -130,11 +130,10 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-
     <TextView
         android:id="@+id/dept"
-        android:layout_width="206dp"
-        android:layout_height="46dp"
+        android:layout_width="197dp"
+        android:layout_height="56dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="205dp"
         android:text="@string/select_your_department"
@@ -195,7 +194,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="148dp"
         android:layout_marginBottom="19dp"
-        android:backgroundTint="@android:color/holo_blue_dark"
+        android:backgroundTint="@android:color/holo_purple"
         android:text="@string/save_profile"
         android:textColor="#212121"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -205,12 +204,12 @@
 
     <Button
         android:id="@+id/btnupload"
-        android:layout_width="142dp"
-        android:layout_height="48dp"
+        android:layout_width="128dp"
+        android:layout_height="56dp"
         android:layout_marginTop="52dp"
-        android:backgroundTint="@android:color/holo_blue_light"
-        android:text="@string/upload_photo"
-        android:textColor="#4E342E"
+        android:backgroundTint="@android:color/black"
+        android:text="Upload"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintStart_toEndOf="@+id/profile"

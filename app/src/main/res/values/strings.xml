@@ -56,4 +56,5 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="upload_photo">Upload Photo</string>
+    <string name="edit_button">Button</string>
 </resources>
