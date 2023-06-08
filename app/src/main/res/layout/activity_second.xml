@@ -4,21 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".SecondActivity">
+
+
+    <TextView
+        android:id="@+id/full"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="@string/name"
+        android:textColor="#212121"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/reg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/reg"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_no"
+        android:textColor="#212121"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <TextView
+        android:id="@+id/courses"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:text="@string/your_course"
+        android:textColor="#212121"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteY="253dp" />
 
     <Button
         android:id="@+id/btnedit"
-        android:layout_width="180dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="462dp"
-        android:layout_marginEnd="164dp"
-        android:layout_marginBottom="221dp"
-        android:text="Edit Profile"
+        android:layout_width="167dp"
+        android:layout_height="83dp"
         android:backgroundTint="@android:color/holo_purple"
+        android:text="@string/edit_profile"
         android:textColor="#212121"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/courses"
+        app:layout_constraintVertical_bias="0.201" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

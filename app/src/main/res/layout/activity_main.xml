@@ -12,6 +12,7 @@
         android:layout_width="399dp"
         android:layout_height="105dp"
         android:background="@color/white"
+        android:backgroundTint="@android:color/holo_purple"
         app:layout_constraintBottom_toTopOf="@+id/profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,12 +29,8 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="6dp"
             android:layout_marginBottom="141dp"
+            android:background="@color/white"
             android:contentDescription="@string/schoollogo"
-            app:layout_constraintBottom_toTopOf="@+id/fullname"
-            app:layout_constraintEnd_toStartOf="@+id/schoolname"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/unilogo"
             tools:ignore="ObsoleteLayoutParam" />
 
@@ -47,13 +44,10 @@
             android:layout_marginBottom="9dp"
             android:paddingBottom="16dp"
             android:text="@string/scholars_association_university"
-            android:textAlignment="gravity"
+            android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/profile"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/logo"
-            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="bold"
             tools:ignore="TextSizeCheck,VisualLintBounds" />
 
     </LinearLayout>

@@ -32,8 +32,24 @@ class MainActivity : AppCompatActivity() {
         val btnsaveprofile = findViewById<Button>(R.id.saveprofile)
             .setOnClickListener {
                 Toast.makeText(this@MainActivity, "You profile has been saved.", Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this, SecondActivity::class.java)
-                    startActivity(intent) }
+                    val str = fullname.text.toString()
+                    val reg = registration.text.toString()
+                    val cos = course.text.toString()
+                   intent.putExtra("Name",str)
+                   intent.putExtra("Reg",reg)
+                   intent.putExtra("course",cos)
+               /** val bundle = Bundle()
+                bundle.putString("name",fullname.text.toString())
+                bundle.putString("reg",registration.text.toString())
+                bundle.putString("course",course.text.toString())**/
+
+                val intent = Intent(this, SecondActivity::class.java)
+                //intent.putExtras(bundle)
+                intent.putExtra("Name",str)
+                intent.putExtra("Reg",reg)
+                intent.putExtra("course",cos)
+                startActivity(intent)
+            }
 
     }
 
